@@ -1,8 +1,6 @@
-## angular2-seed
+## PeppaPig y Angular2
 
-A simple starter project demonstrating the basic concepts of Angular 2.
-
-This branch uses [Webpack](https://webpack.github.io/) for Development. There is also a SystemJS branch available.
+Ejemplo de components, services con angular 2.
 
 ### Usage
 - Clone or fork this repository
