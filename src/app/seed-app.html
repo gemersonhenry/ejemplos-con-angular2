@@ -1,19 +1,23 @@
-<h3>
-  Angular 2 Seed
-</h3>
-<nav>
-	<a [routerLink]=" ['/Home'] ">
+
+ <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">PeppaPig</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a [routerLink]=" ['/Home'] ">
     Home
-  </a>
-  |
-	<a [routerLink]=" ['/About'] ">
+  </a></li>
+        <li><a [routerLink]=" ['/About'] ">
     About
-  </a>
- 
-</nav>
-<peppapig-component></peppapig-component>
+  </a></li>
+   
+      </ul>
+    </div>
+  </nav>
 <main>
+  <peppapig-component></peppapig-component>
+  <div class="row">
 	<router-outlet></router-outlet>
+  </div>
 </main>
 
 
