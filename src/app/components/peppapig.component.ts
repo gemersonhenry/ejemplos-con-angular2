@@ -8,9 +8,11 @@ import {PeppaPigService} from '../services/peppapig.services';
               
               <div class="col s12">
                 <h2>{{welcome}}</h2>
-              <a class="waves-effect waves-light btn" [class.disabled] = "isdisabled" 
+                <input type="text" >
+              <a class="waves-effect waves-light btn" [class.disabled] = "isdisabled" >
               
-             >button</a>
+             class binding </a>
+             <a class="waves-effect waves-light btn">style binding</a>
                 </div>
               </div>`,
     providers: [PeppaPigService]
@@ -20,7 +22,8 @@ export class PeppaPigComponent {
     friends: string[];
     isdisabled: Boolean = false;
     bigicon: Boolean = true;
-    welcome: string = "interpolation"
+    welcome: string = "Angular2 y Peppa Pig"
+    age: string
 
     constructor(private _peppapigService: PeppaPigService) {
 
