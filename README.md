@@ -1,6 +1,6 @@
 ## Ejemplos con Angular2
 
-Este proyecto contiene los ejemplos de codigo relacionado a los diferentes articulos que he publicado sobre Angular2.
+Este proyecto contiene los ejemplos de código relacionado a los diferentes articulos que he publicado sobre Angular2.
 
 ### Articulos
 - Angular2 y Typescript. [http://www.danywalls.com/index.php/2016/05/02/angular2-y-typescript/]
