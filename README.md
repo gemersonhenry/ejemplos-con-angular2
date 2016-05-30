@@ -16,5 +16,3 @@ Este proyecto contiene los ejemplos de codigo relacionado a los diferentes artic
 - ejecutar `npm install` para instalar las dependecias.
 - ejecutar `npm start` para iniciar el servidor de desarrollo.
 - abrir el navegado en la direccion [`http://localhost:3000`](http://localhost:3000).
-- 
-Happy Typescript.
