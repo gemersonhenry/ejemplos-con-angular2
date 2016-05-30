@@ -1,6 +1,8 @@
+import {FRIENDS} from '../mocks/mocks.peppafriends.ts';
+import {Friend} from '../models/friend'
 export class PeppaPigService {
     
-    getPeppaFriends(): string[] {
-        return ["pedro poni","madamme gazelle", "dani dog"]
+    getPeppaFriends(): Friend[] {
+        return FRIENDS
     }
 }
