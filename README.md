@@ -15,3 +15,4 @@ Este proyecto contiene los ejemplos de codigo relacionado a los diferentes artic
 - ejecutar en la consola `npm install -g webpack webpack-dev-server typings typescript` para instalar las dependecias globales.
 - ejecutar `npm install` para instalar las dependecias.
 - ejecutar `npm start` para iniciar el servidor de desarrollo.
+- abrir el navegador en la direccion [`http://localhost:3000`](http://localhost:3000).
