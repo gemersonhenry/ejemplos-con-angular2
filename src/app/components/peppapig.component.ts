@@ -5,12 +5,14 @@ import {PeppaPigService} from '../services/peppapig.services';
   selector: 'peppapig-component',
   template: `
               <div class="row">
-              <div  class="col s12" [style.backgroundColor] = "isdisabled ? 'gray' : 'blue'">
+              
+              <div (click)="ClickContenedor()"  class="col s12" [style.backgroundColor] = "isdisabled ? 'gray' : 'blue'">
                 <h2>{{welcome}}</h2>
                 <input type="text" >
-              <a (mouseover) = "CleanFriends()"  class="waves-effect waves-light btn" [class.disabled] = "isdisabled" >
+              <a (mouseover) = "CleanFriends($event)"  class="waves-effect waves-light btn" [class.disabled] = "isdisabled" >
                   Clean Friends</a>
-             <a (click)="GetFriends()" class="waves-effect waves-light btn">Get Friends</a>
+                <a (click)="GetFriends()" class="waves-effect waves-light btn">Get Friends</a>
+               
                 </div>
                   <ul class="collection" >
                       <li *ngFor="let f of friends">
@@ -33,7 +35,8 @@ export class PeppaPigComponent {
       
   }
 
-  CleanFriends(event: any) {
+  CleanFriends($event) {
+    $event.stopPropagation()
     console.log(event);
     this.friends = [];
   }
@@ -42,4 +45,10 @@ export class PeppaPigComponent {
     this.friends = this._peppapigService.getPeppaFriends();
     console.log(this.friends);
   }
+  
+  ClickContenedor(){
+    console.log("click contenedor");
+  }
+  
+ 
 }
